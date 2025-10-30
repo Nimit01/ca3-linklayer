@@ -175,12 +175,6 @@
 <p>Random-access methods trade simplicity for lower efficiency under load. For example, pure ALOHA can only reach about 18% channel utilization at best; slotted ALOHA roughly doubles that. CSMA/CD improves utilization on wired links because collisions are detected quickly and retransmission backoff reduces repeated collisions. Wi‑Fi's CSMA/CA and RTS/CTS further improve performance in wireless environments by avoiding collisions.</p>
 <h3>Real-world case study: Streaming in a residential network</h3>
 <p>Consider a household streaming an HD video while another member uses VoIP. The cable modem at the premises connects to the ISP via DOCSIS. Upstream, the modem contends for time slots; the ISP's CMTS schedules upstream bursts to avoid collisions. Within the home, the Wi‑Fi router uses CSMA/CA to coordinate devices, while Ethernet links between streaming devices and the router use CRC-enabled frames. Down the ISP backbone, MPLS can prioritize VoIP traffic (low-latency label-switched paths) while best-effort streaming uses a different path. This example ties together link-layer framing, DOCSIS access, link virtualization, and MPLS-based QoS.</p>
-<h3>Examples &amp; small exercises (for the grader)</h3>
-<ul>
-<li>Compute the parity bit for <code>1011010</code> (answer: 1 for even parity).</li>
-<li>Explain why a simple checksum might miss certain rearrangement errors while a CRC would likely catch them.</li>
-<li>Sketch how VLAN tags isolate traffic on a shared switch and why trunk ports carry tagged frames.</li>
-</ul>
 <h2>8. References</h2>
 <ul>
 <li><a href="https://www.networkacademy.io/ccna/network-fundamentals/data-link-layer">Network Academy: Data Link Layer</a></li>
